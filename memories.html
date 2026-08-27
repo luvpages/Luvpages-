@@ -30,16 +30,27 @@ margin-bottom:30px;
 }
 
 .gallery{
-max-width:750px;
-margin:auto;
+    max-width:900px;
+    margin:30px auto;
+    display:flex;
+    gap:18px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding:10px 5px 25px;
+    scrollbar-width:none;
+}
+
+.gallery::-webkit-scrollbar{
+    display:none;
 }
 
 .photo{
-background:white;
-padding:10px;
-margin:25px 0;
-border-radius:22px;
-box-shadow:0 8px 25px rgba(0,0,0,.1);
+    flex:0 0 88%;
+    scroll-snap-align:center;
+    background:white;
+    padding:10px;
+    border-radius:22px;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
 }
 
 .photo img{
