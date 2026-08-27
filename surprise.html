@@ -88,6 +88,50 @@ text-decoration:none;
 border-radius:30px;
 font-family:Arial,sans-serif;
 }
+  .big-heart{
+    font-size:80px;
+    animation:heartbeat 1.2s ease-in-out infinite;
+    filter:drop-shadow(0 0 25px rgba(255,100,180,.7));
+}
+
+.final h1{
+    animation:finalTitle 1s ease both;
+}
+
+.final p{
+    animation:finalText 1.4s ease both;
+}
+
+@keyframes heartbeat{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.18);
+    }
+}
+
+@keyframes finalTitle{
+    from{
+        opacity:0;
+        transform:scale(.6);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes finalText{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+  }
 </style>
 </head>
 
@@ -112,7 +156,7 @@ Open One Last Surprise 💗
 </div>
 
 <div id="surprise" class="final">
-
+<div class="big-heart">💗</div>
 <div style="font-size:75px;">🎉</div>
 
 <h1>HAPPY BIRTHDAY! 🎂</h1>
